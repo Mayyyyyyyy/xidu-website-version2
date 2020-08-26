@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navbar */
+.firstPage{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+nav{
+    width:100vw;
+    height:10vh;
+    display: flex;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background-color: black;
+}
+
+nav img{
+    width:5vw;
+    height:auto;
+    position: absolute;
+    left:10%;
+   
+}
+
+.links{
+    display: flex;
+    position: absolute;
+    top:20%;
+    right:10%;
+   
+}
+
+.links a{
+    text-decoration: none;
+    color:white;
+}
+
+.subnavContent li{
+    list-style: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.links a, .subnav{
+     padding:0 20px 0 20px;
+}
+
+.home a:hover,.subnav a:hover,.questions a:hover,.contact a:hover{
+    padding-bottom: 10px;
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+}
+.subnav:hover > .subnavContent{
+    display: block;
+}
+
+.subnavContent{
+    display: none;
+}
+
+
+
+/* Second Page */
+
+.secondPage{
+    width:100vw;
+    height:210vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.buttons{
+    width:100vw;
+    height:10vh;
+    padding-top: 10vh; 
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button{
+    width:10vw;
+    height:10vh;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+    background-color: white;
+    color:black;
+}
+
+.container{
+    width:100vw;
+    height:140vh;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 40vh;
+    grid-gap:8%;
+    justify-content: center;
+    align-content: start;
+    padding-top: 20vh; 
+}
+
+.menu img{
+    width:100%;
+    height:50%;
+    object-fit: cover;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px;
+}
+
+.info{
+    width:100%;
+    height:50%;
+    background-color: rgba(1, 1, 1,0.7);
+    color: white;
+}
+
+.info p{
+    margin:0 auto;
+}
+
+.menu:hover > .menu img{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+
+.bottomBox{
+    width: 100vw;
+    min-height: 50px;
+    background-color: rgba(14, 14, 14, 0.5);
+    position: absolute;
+    bottom: 0;
+}
+.bottomBox p{
+   color: white;
+   text-align: center;
+   justify-content: center;
+   line-height: 50px;
+}
+
+

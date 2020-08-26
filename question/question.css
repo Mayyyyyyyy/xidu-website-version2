@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navbar */
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100vw;
+    height:150vh;
+    position: relative;
+}
+nav{
+    width:100vw;
+    height:10vh;
+    display: flex;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background-color: black;
+}
+
+nav img{
+    width:5vw;
+    height:auto;
+    position: absolute;
+    left:10%;
+   
+}
+
+.links{
+    display: flex;
+    position: absolute;
+    top:20%;
+    right:10%;
+   
+}
+
+.links a{
+    text-decoration: none;
+    color:white;
+}
+
+.subnavContent li{
+    list-style: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.links a, .subnav{
+     padding:0 20px 0 20px;
+}
+
+.home a:hover,.subnav a:hover,.questions a:hover,.contact a:hover{
+    padding-bottom: 10px;
+    color: rgb(182, 182, 182);
+}
+.subnav:hover > .subnavContent{
+    display: block;
+}
+
+.subnavContent{
+    display: none;
+}
+
+/* Container */
+
+.container{
+    height:80vh;
+    margin:auto;
+    padding-top:40vh;
+}
+
+.question{
+    width:60vw;
+    margin:auto;
+    padding:5px 0;
+}
+
+.questionTitle{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding:15px 0;
+}
+
+.questionText{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding:30px 0;
+    font-size: 20px;
+    display:none;
+}
+
+button .fa-minus{
+    display: none;
+}
+
+.show button .fa-minus{
+    display: block;
+}
+
+.show .questionText{
+    display: block;
+}
+
+.show button .fa-plus{
+    display: none;
+}
+
+button{
+    background: none;
+    background-color: white;
+    color: black;
+    padding:0 9px;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(85, 85, 85);
+}
+/* Bottom Box*/
+.bottomBox{
+    width: 100vw;
+    min-height: 50px;
+    background-color: rgba(70, 70, 70, 0.5);
+    position: absolute;
+    bottom:0;
+}
+.bottomBox p{
+   color: white;
+   text-align: center;
+   justify-content: center;
+   line-height: 50px;
+}

@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(room-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+/* firstPage */
+
+.firstPage{
+    width:100vw;
+    height:90vh;
+   
+}
+
+nav{
+    width:100vw;
+    height:10vh;
+    display: fixed;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    background-color: black;
+}
+
+nav img{
+    width:5vw;
+    height:auto;
+    position: absolute;
+    left:10%;
+    top:10%;
+}
+
+.links{
+    display: flex;
+    position: absolute;
+    top:20%;
+    right:10%;
+   
+}
+
+.links a{
+    text-decoration: none;
+    color:white;
+}
+.links a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.subnavContent li{
+    list-style: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.links a, .subnav{
+     padding:0 20px 0 20px;
+}
+
+.home a:hover,.subnav a:hover,.questions a:hover,.contact a:hover{
+    padding-bottom: 10px;
+    color: rgb(182, 182, 182);
+}
+.subnav:hover > .subnavContent{
+    display: block;
+}
+
+.subnavContent{
+    display: none;
+}
+.text{
+    color:white;
+    width:100vw;
+    height:60vh;
+    text-align: center;
+    padding:30vh 0;
+}
+
+
+/* secondPage */
+.secondPage{
+    width:100vw;
+    height:260vh;
+    background-color: rgba(0,0,0);
+   position: relative;
+}
+/* 
+.card-deck{
+    padding:30vh 0;
+}
+.card-image-top{
+    height:70%;
+    width:auto;
+}
+.card-image-top .img2{
+    height:50%;
+    width:auto;
+}
+.card{
+    height:70vh;
+}
+ */
+
+.Night{
+    width:90vw;
+    height:80vh;
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+.Night img{
+    width:50%;
+    height:auto;
+    padding:10vh;
+}
+.left{
+    margin:auto;
+    padding:0 5vh;
+    float:left;
+}
+
+.left h1{
+    font-weight: bolder;
+    padding:5vh 0;
+}
+.left h5{
+   font-weight: lighter;
+   padding:0 0 5vh 0;
+}
+
+.left button{
+   padding:4vh 8vw;
+   background-color: black;
+   color: white;
+}
+.left button:hover{
+   background-color: rgb(53, 53, 53);
+ 
+}
+
+/* Bottom */
+
+.bottomBox{
+    width: 100vw;
+    min-height: 50px;
+    background-color: rgba(55, 55, 55, 0.5);
+    position: absolute;
+    bottom: 0;
+}
+.bottomBox p{
+   color: white;
+   text-align: center;
+   line-height: 50px;
+}

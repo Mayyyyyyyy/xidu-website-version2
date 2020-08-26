@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navbar */
+.firstPage{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+  
+}
+nav{
+    width:100vw;
+    height:10vh;
+    display: flex;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background-color: black;
+}
+
+nav img{
+    width:5vw;
+    height:auto;
+    position: absolute;
+    left:10%;
+   
+}
+
+.links{
+    display: flex;
+    position: absolute;
+    top:20%;
+    right:10%;
+   
+}
+
+.links a{
+    text-decoration: none;
+    color:white;
+}
+
+.subnavContent li{
+    list-style: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.links a, .subnav{
+     padding:0 20px 0 20px;
+}
+
+.home a:hover,.subnav a:hover,.questions a:hover,.contact a:hover{
+    padding-bottom: 10px;
+    color: rgb(182, 182, 182);
+}
+.subnav:hover > .subnavContent{
+    display: block;
+}
+
+.subnavContent{
+    display: none;
+}
+
+.hometext{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    
+}
+.hometext h1{
+    padding: 30px 0;
+}
+
+
+/* second page */
+.secondPage{
+    height:100vh;
+    width:100vw;
+    background-color: rgba(218, 218, 218,1);
+    position: relative;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(images/bg2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+   
+}
+
+.para{
+    background-color:white;
+    width:66vw;
+    height:50vh;
+    position: absolute;
+    top:50%;
+    left:32%;
+    transform:translate(-50%,-20%);
+   
+}
+
+h1,h3,h5{
+    text-align: left;  
+}
+
+h5{
+    padding:50px 0 10px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    padding:10px 0 30px 50px;
+}
+
+h3{
+    padding:10px 50px 30px 50px;
+    font-family: cursive;
+}
+
+.secondPage button{
+    width:15rem;
+    height: 6rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom:9%;
+    right:5%;
+    transform:translate(-30%,-10%);
+    border:none;
+    background-color:rgb(7, 7, 7);
+    color: white;
+}
+
+.secondPage button:hover{
+    background-color: white;
+    color: black;
+    transition: .3s ease;
+}
+
+/* third page 
+.thirdPage{
+    
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+  
+}
+.part1,.part2, .part3{
+    display:flex;
+   
+}
+
+.thirdPage img{
+    width:33.33vw;
+   height:33.33vh;
+   opacity: 0.8;
+}
+.thirdPage img:hover{
+    opacity: 1;
+}
+*/
+
+/* forth page */
+
+.forthPage{
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+   
+}
+
+.topBox{
+    width: 100vw;
+    height:70vh;
+    /* padding:10vh 15vw;
+    display: flex;
+    align-items: center; */
+}
+.topBox p{
+    padding:50px 0 0 0;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+
+.leftPart{
+    position: absolute;
+    top:200px;
+    left:20px;
+}
+
+.part1, .part2, .part3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding:20px;
+}
+
+.fa-phone, .fa-envelope-o, .fa-map-marker{
+    background-color: black;
+    color:white;
+    padding:25px;
+}
+.socialMedia{
+    position: absolute;
+    top:200px;
+    right:20px;
+    display: flex;
+    flex-direction: column;
+}
+.fa-weixin, .fa-weibo{
+   padding:15px 120px;
+   color:white;
+}
+
+/* Bottom Box */
+.bottomBox{
+    width: 100vw;
+    height:10vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+}
+.bottomBox p{
+    color: white;
+   text-align: center;
+   line-height: 10vh;
+}
+
+.bottomBox i{
+    position: fixed;
+    bottom:3vh;
+    right:5vh;
+    padding:10px 10px;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;
+}
+.bottomBox i:hover{
+    color: black;
+}
+
+
+/* fifth page */
+
+.fifthPage{
+    width:100vw;
+    height:80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/show/show-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.imgList{
+    width:1200px;
+    height:60vh;
+    overflow: hidden;
+    position: absolute;
+    top:10vh;
+    left:3vw;
+}
+
+.line{
+    width:1200px;
+    height:10vh;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    align-items: center;
+}
+
+.imgList ul{
+    width:100%;
+    height:100%;
+    position: relative;
+    list-style: none;
+    
+}
+.imgList li{
+    position: absolute;
+    width:600px;
+    height:400px
+}
+
+.imgList img{
+    widows:100%;
+    height:100%;
+}
+
+.list1{
+    transform: translateX(0) scale(0.8); 
+    transform-origin: 0 100%;
+    z-index: 1;
+}
+
+.list2{
+    transform: translateX(280px); 
+    z-index: 2;
+}
+
+.list3{
+    transform: translateX(630px) scale(0.8); 
+    transform-origin: 100% 100%;
+    z-index: 1;
+}
+.list4{
+    transform: translateX(1100px) scale(0.8); 
+    transform-origin: 100% 100%;
+}
+.list5{
+    transform: translateX(1200px) scale(0.8); 
+    transform-origin: 100% 100%;
+}
+.list6{
+    transform: translateX(1425px) scale(0.8); 
+    transform-origin: 100% 100%;
+}
+
+span{
+    display: inline-block;
+    width:30px;
+    height:3px;
+    background: white;
+
+}
+
+.direction{
+    position: absolute;
+    z-index: 3;
+}
+
+.direction .fa-chevron-left{
+    position: absolute;
+    left:20vw;
+}
+
+.direction .fa-chevron-right{
+    position: absolute;
+    right:0;
+}
+
+
+
